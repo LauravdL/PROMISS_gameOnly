@@ -1,0 +1,24 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-sqlite-ext": {
+      "PACKAGE_NAME": "io.cordova.PROMISS_gameOnly"
+    },
+    "cordova-plugin-dbcopy": {
+      "PACKAGE_NAME": "io.cordova.PROMISS_gameOnly"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "io.cordova.PROMISS_gameOnly"
+    }
+  },
+  "dependent_plugins": {}
+}

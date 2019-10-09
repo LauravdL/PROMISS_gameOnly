@@ -1,3 +1,4 @@
+//this function is used by each game to select a random product according to their constraints
 function getRandomProduct(game, condition) {
     if (!databaseBusy) {
         query = `SELECT * FROM protein_products WHERE name NOT LIKE '%(klik%'`; //not include general categories
@@ -52,7 +53,7 @@ function getRandomProduct(game, condition) {
 	
 }
 
-
+//use previous score saved in database
 function setPreviousScore() {
     if (!databaseBusy) {
     
@@ -70,7 +71,6 @@ function setPreviousScore() {
                 console.log("prevscore: " + prevScore)
              }
              
-             //tempNewGardenElement = false; //the element will not be new
              score(prevScore); //set previous score
              databaseBusy = false;
               
@@ -84,6 +84,7 @@ function setPreviousScore() {
     }
 }
 
+//save score to database
 function saveScore() {
     if (!databaseBusy) {
     
@@ -106,6 +107,7 @@ function saveScore() {
     }
 }
 
+//creates a list with all protein points & the number of products in that category
 function setupPointsWithPairs() {                        
     if (!databaseBusy) {
     

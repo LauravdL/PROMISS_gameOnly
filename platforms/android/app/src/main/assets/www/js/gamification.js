@@ -64,7 +64,7 @@ function score(change) {
     //    document.getElementById('score').style.textAlign = "right";
     //}
     
-    //saveScore();
+    saveScore();
     document.getElementById('score').innerHTML = "Spelpunten: " + gamesScore;
     
     writeLog("Huidige score: " + gamesScore);
